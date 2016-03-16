@@ -1,0 +1,18 @@
+{
+  "name": "node-env",
+  "description": "What env are we in...",
+  "version": "0.0.0",
+  "bin": {
+    "node-env": "bin/cli.js"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}

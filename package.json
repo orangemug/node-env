@@ -2,6 +2,9 @@
   "name": "node-env",
   "description": "What env are we in...",
   "version": "0.1.0",
+  "scripts": {
+    "test": "mocha test/index.js"
+  },
   "bin": {
     "node-env": "bin/cli.js"
   },
@@ -19,5 +22,7 @@
   "dependencies": {
     "envify": "^3.4.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  }
 }

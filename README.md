@@ -1,6 +1,14 @@
 # node-env
 What env are we in...
 
+[![circleci](https://circleci.com/gh/orangemug/node-env.png?style=shield)][circleci]
+[![Dependency Status](https://david-dm.org/orangemug/node-env.svg)][dm-prod]
+[![Dev Dependency Status](https://david-dm.org/orangemug/node-env/dev-status.svg)][dm-dev]
+
+[circleci]:  https://circleci.com/gh/orangemug/node-env
+[dm-prod]:   https://david-dm.org/orangemug/node-env
+[dm-dev]:    https://david-dm.org/orangemug/node-env#info=devDependencies
+
 
 ## Install
 

@@ -1,7 +1,7 @@
 var assert     = require("assert");
 var browserify = require("browserify");
-var vm         = require("vm");
 var cp         = require("child_process");
+var vm         = require("vm");
 
 /**
  * Yeah these test are overboard but I want to learn how to do these kinda tests.

@@ -1,8 +1,11 @@
 var assert     = require("assert");
 var browserify = require("browserify");
 var vm         = require("vm");
+var cp         = require("child_process");
 
-
+/**
+ * Yeah these test are overboard but I want to learn how to do these kinda tests.
+ */
 describe("node-env", function() {
   beforeEach(function() {
     process.env.NODE_ENV = "";
@@ -62,6 +65,19 @@ describe("node-env", function() {
         assert.equal(context.testOut, "staging");
         done();
       });
+    });
+  });
+
+  describe("cli", function() {
+    it("should default to development", function() {
+      var out = cp.execSync(__dirname+"/../bin/cli.js");
+      assert.equal(out.toString(), "development\n");
+    });
+
+    it("should be set to NODE_ENV", function() {
+      process.env.NODE_ENV = "staging";
+      var out = cp.execSync(__dirname+"/../bin/cli.js");
+      assert.equal(out.toString(), "staging\n");
     });
   });
 

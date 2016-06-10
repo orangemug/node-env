@@ -16,10 +16,11 @@ What env are we in...
 
 
 ## Usage
-JavaScript use
+Below `env` will be set to `NODE_ENV` or `development` if `NODE_ENV` is `undefined`
 
     var env = require("node-env");
     console.log(env);
+
 
 **NOTE**: The [package.json](/package.json) contains the [envify](https://www.npmjs.com/package/envify) transform so via [browserify](https://www.npmjs.com/package/browserify) it'll just work!
 
